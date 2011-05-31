@@ -1,0 +1,16 @@
+A simple GWT project with a minimal POM to help you started with GWT, maven and GPE. This project was generated
+from gwt-maven-plugin's archetype and then modified to make it work with GPE.
+
+To run the project from a command window:
+- mvn gwt:run - to run the development mode
+- mvn test gwt:test - to run both, JRE and GWT tests
+- mvn gwt:compile - to compile the GWT permutations
+
+To run the project from Eclipse:
+1. make sure you have installed the following in your Eclipse environment:
+ - Google Plugin for Eclipse 3.6 (2.3.1+) from http://dl.google.com/eclipse/plugin/3.6
+ - Maven Integration for Eclipse (0.12+) from http://m2eclipse.sonatype.org/sites/m2e
+ - Maven Integration for WTP (0.12+) from http://m2eclipse.sonatype.org/sites/m2e-extras
+2. Import | Existing maven project
+3. Locate the pom.xml and click finish
+4. Run or Debug As | Web application
