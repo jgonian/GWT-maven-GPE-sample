@@ -97,7 +97,7 @@
                     <copyWebapp>true</copyWebapp>
                     <runTarget>MyGwtApp.html</runTarget>
                     <mode>htmlunit</mode>
-                    <module>com.mycompany.example.client.MyGwtApp</module>
+                    <module>com.mycompany.example.MyGwtApp</module>
                 </configuration>
                 <executions>
                     <execution>
