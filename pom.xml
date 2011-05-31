@@ -95,9 +95,9 @@
                 <configuration>
                     <hostedWebapp>${webapp.directory}</hostedWebapp>
                     <copyWebapp>true</copyWebapp>
-					<runTarget>MyGwtApp.html</runTarget>
-					<mode>htmlunit</mode>
-					<module>com.mycompany.example.client.MyGwtApp</module>
+                    <runTarget>MyGwtApp.html</runTarget>
+                    <mode>htmlunit</mode>
+                    <module>com.mycompany.example.client.MyGwtApp</module>
                 </configuration>
                 <executions>
                     <execution>
