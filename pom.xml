@@ -118,6 +118,7 @@
                 <configuration>
                     <filesets>
                         <fileset><directory>.gwt</directory></fileset>
+                        <fileset><directory>www-test</directory></fileset>
                     </filesets>
                 </configuration>
             </plugin>
