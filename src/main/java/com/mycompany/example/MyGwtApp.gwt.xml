@@ -16,7 +16,7 @@
   <entry-point class='com.mycompany.example.client.MyGwtApp'/>
 
   <!-- Specify the paths for translatable code                    -->
-  <source path='client' excludes="**/GwtTest*.java"/>
+  <source path='client'/>
   <source path='shared'/>
 
 </module>
