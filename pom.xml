@@ -17,7 +17,7 @@
         <webapp.directory>${project.build.directory}/${project.build.finalName}</webapp.directory>
 
         <!-- Dependencies versions -->
-        <gwt.version>2.2.0</gwt.version>
+        <gwt.version>2.3.0</gwt.version>
         <junit.version>4.8.1</junit.version>
 
         <!-- Plugin properties -->
@@ -39,6 +39,19 @@
             <groupId>com.google.gwt</groupId>
             <artifactId>gwt-user</artifactId>
             <version>${gwt.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency> <!-- TODO: remove when upgrade to newer GWT version -->
+            <groupId>javax.validation</groupId>
+            <artifactId>validation-api</artifactId>
+            <version>1.0.0.GA</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>javax.validation</groupId>
+            <artifactId>validation-api</artifactId>
+            <version>1.0.0.GA</version>
+            <classifier>sources</classifier>
             <scope>provided</scope>
         </dependency>
 
@@ -108,6 +121,23 @@
                         </goals>
                     </execution>
                 </executions>
+                <dependencies>
+                    <dependency>
+                        <groupId>com.google.gwt</groupId>
+                        <artifactId>gwt-user</artifactId>
+                        <version>${gwt.version}</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>com.google.gwt</groupId>
+                        <artifactId>gwt-dev</artifactId>
+                        <version>${gwt.version}</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>com.google.gwt</groupId>
+                        <artifactId>gwt-servlet</artifactId>
+                        <version>${gwt.version}</version>
+                    </dependency>
+                </dependencies>
             </plugin>
 
             <!-- Delete gwt generated stuff -->
